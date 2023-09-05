@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list-(Express js)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="box">
+            <div class="container">
+                <h1 class="h1">My Day</h1>
+                <span class="fix" id="dateTime"></span>
+                <form action="/addtask" method="POST">
+                    <h2>To day's Taks</h2>
+                    <div class="over1">
+
+                        <% for( var i=0; i < task.length; i++){ %>
+                            <h3 id="tagValue">
+                                <button formaction="/edittask" id="top" class="edit" name="check">✏️</button>
+                                <button formaction="/removetask" id="top" class="delete" name="check"
+                                    value="<%= task[i] %>">🗑️</button>
+                                <%= task[i] %>
+                            </h3>
+                            <% } %>
+                    </div>
+                    
+                    <div>
+                        <input type="text" name="newtask" placeholder="Add a task" class='inputTaks' />
+                        <button class="btn"><b>+</b></button>
+                    </div>
+                </form>
+
+                <h2> Completed task </h2>
+
+                <br />
+
+                <div class="over">
+                    <% for(var i=0; i < complete.length; i++){ %>
+                        <li>
+                            <!-- <input type="radio" class="cancle" checked> -->
+                            <h4 checked>
+                                <%= complete[i] %>
+                            </h4>
+                        </li>
+                        <% } %>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <script>
+        function refreshTime() {
+            const timeDisplay = document.getElementById("dateTime");
+            const dateString = new Date().toLocaleString();
+            const formattedString = dateString.replace(", ", " - ");
+            timeDisplay.textContent = formattedString;
+        }
+        setInterval(refreshTime, 1);
+    </script>
+</body>
+
+</html>

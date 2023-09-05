@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  color: #fff;
+  outline: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #25406B;
+  font-family: "Lexend", sans-serif;
+}
+
+.height {
+  height: 100%;
+}
+
+h2 {
+  padding-top: 30px;
+}
+
+.over {
+  height: 220px;
+  overflow: scroll;
+  z-index: 100;
+}
+
+.over1 {
+  height: 150px;
+  overflow: scroll;
+  z-index: 100;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+  padding: 25px;
+  background-image: url('../img/sealight.jpg');
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input {
+  font-size: 22px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h1 {
+  color: #fff;
+  text-align: left;
+  font-size: 40px;
+}
+
+span {
+  font-size: 20px;
+  color: #fff;
+}
+
+h3 {
+  position: relative;
+  width: 100%;
+  height: 35px;
+  background-color: #2727279e;
+  line-height: 35px;
+  color: #fff;
+  padding-left: 20px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.delete {
+  position: absolute;
+  right: 0;
+  width: 80px;
+  height: 35px;
+  border-radius: 0 8px 8px 0;
+  background-color: #272727;
+  border: none;
+  color: #1e1f21;
+  font-family: "Lexend", sans-serif;
+  transition: all 0.3s;
+  border-left: 1px solid #8686869c;
+}
+
+.delete:hover {
+  background-color: #2727279e;
+}
+
+.edit {
+  position: absolute;
+  right: 80px;
+  width: 80px;
+  height: 35px;
+  border-radius: 8px 0 0 8px;
+  background-color: #272727;
+  border: none;
+  color: #1e1f21;
+  font-family: "Lexend", sans-serif;
+  transition: all 0.3s;
+}
+.edit:hover{
+  background-color: #2727279e;
+}
+
+
+::placeholder {
+  color: #ffffff;
+  font-family: "Lexend", sans-serif;
+  font-size: 15px;
+}
+
+.fix {
+  position: fixed;
+}
+
+
+.inputTaks {
+  position: relative;
+  color: #ffffff;
+  width: 100%;
+  height: 40px;
+  background-color: #272727;
+  border: none;
+  text-indent: 20px;
+  font-family: "Lexend", sans-serif;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+b {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+
+.btn {
+  position: absolute;
+  top: 267px;
+  right: 198px;
+  /* z-index: 1; */
+  color: rgb(255, 255, 255);
+  width: 100px;
+  height: 40px;
+  line-height: 20px;
+  font-size: 20px;
+  background-color: #4545458e;
+  border: none;
+  border-radius: 10px;
+  font-family: "Lexend", sans-serif;
+  margin: 24px 0;
+  text-align: center;
+  list-style: 40px;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #454545;
+  /* border: 5px solid #fff; */
+  color: #676767;
+}
+
+.center {
+  justify-content: center;
+  display: flex;
+}
+
+.mg {
+  margin: 20px 0;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.boxh-200 {
+  height: 450px;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.cancle {
+  text-decoration: #1e1f21;
+}
+
+table {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  background-color: transparent;
+  height: auto;
+}
+
+table tr th {
+  height: 30px;
+  padding-top: 50px;
+  font-size: 22px;
+  color: #fff;
+  text-align: left;
+}
+
+h4 {
+  width: 100%;
+  height: 35px;
+  background-color: #2727279e;
+  line-height: 35px;
+  color: #fff;
+  padding-left: 20px;
+  border-radius: 8px;
+  margin-top: 8px;
+  text-decoration: line-through;
+}
+
+table tr td {
+  height: 30px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 10px;
+  text-align: left;
+  padding-top: 10px;
+}
